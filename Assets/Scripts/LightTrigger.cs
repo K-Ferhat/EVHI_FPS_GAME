@@ -7,6 +7,7 @@ public class LightTrigger : MonoBehaviour
     public Light lightBoss;
     public Button button;
     public GameObject enemy;
+    public GameObject enemyHealthBar;
 
     // Start is called before the first frame update
     void Start()
@@ -24,5 +25,6 @@ public class LightTrigger : MonoBehaviour
         lightBoss.enabled = true;
         button.ButtonPressed();
         enemy.SetActive(true);
+        enemyHealthBar.SetActive(true);
     }
 }

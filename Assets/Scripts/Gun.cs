@@ -71,6 +71,12 @@ public class Gun : MonoBehaviour
             if (target != null){
                 target.TakeDamage(damage);
             }
+            else {
+                TargetBoss targetBoss = hit.transform.GetComponent<TargetBoss>();
+                if (targetBoss != null) {
+                    targetBoss.TakeDamage(damage);
+                }
+            }
         }
 
         if (hit.rigidbody != null) {

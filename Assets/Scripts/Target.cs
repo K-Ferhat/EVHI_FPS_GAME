@@ -2,6 +2,7 @@
 
 public class Target : MonoBehaviour
 {
+    public Enemy enemy;
     public int health = 50;
 
     public void TakeDamage (int amount){
@@ -13,6 +14,6 @@ public class Target : MonoBehaviour
     }
 
     void Die (){
-        Destroy(gameObject);
+        enemy.Die();
     }
 }
